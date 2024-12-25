@@ -1,0 +1,86 @@
+.Register{
+    height:100vh;
+    background-color: rgb(124, 121, 175);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    .card{
+        width:50%;
+        
+        display:flex;
+        flex-direction: row-reverse;
+        border-radius:10px;
+        background-color: white;
+        min-height:500px;
+        overflow: hidden;
+        .left{
+            padding:35px;
+            display:flex;
+            flex-direction:column;
+            gap:24px;
+            color:white;
+            width:50%;
+            background:linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url('../blog-recent-5.jpg');
+            background-size: cover;
+            background-position: center;
+            h1{
+                font-size: 60px;
+                line-height: 50px;
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+            span{
+                font-size:14px;
+                text-align: left;
+            }
+            button{
+                width:50%;
+                padding:8px;
+                color:rebeccapurple;
+                border: none;
+                border-radius:4px;
+                background-color: white;
+                font-weight: bold;
+                cursor:pointer;
+                
+            }
+        }
+        
+        .right{
+            width:50%;
+            padding:35px;
+            display:flex;
+            flex-direction: column;
+            gap: 24px;
+            
+            h1{
+                font-size: 35px;
+                color:#555
+            }
+            form{
+                display:flex;
+                flex-direction: column;
+                gap:30px;
+                input{
+                    border:none;
+                    border-bottom:1px solid lightgrey;
+                    padding:20px 10px;
+
+                }
+                button{
+                    width:50%;
+                    padding:8px;
+                    border-radius:4px;
+                    border:none;
+                    background-color:#6e69c7;
+                    font-weight:bold;
+                    color:white;
+                    cursor:pointer
+                }
+            }
+
+        }
+    }
+}
