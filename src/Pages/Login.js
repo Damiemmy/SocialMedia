@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/Login.scss";
+import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -9,8 +11,9 @@ const Login = () => {
           <h1>Social Book</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Error facere tempore delectus, maiores omnis amet laboriosam,
             vel quia saepe alias similique nesciunt asperiores quisquam repellat velit nostrum totam dolores corrupti.</p>
-          <span>Don't you have an account?</span>
-          <button>Register</button>
+            <span>Don't you have an account?</span>
+            <Link to='/register'>
+          <button>Register</button></Link>
         </div>
         <div className='right'>
             <h1>Login</h1>
@@ -22,6 +25,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    
   )
 }
 

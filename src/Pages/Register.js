@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/Register.scss";
+import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -10,7 +12,7 @@ const Register = () => {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Error facere tempore delectus, maiores omnis amet laboriosam,
             vel quia saepe alias similique nesciunt asperiores quisquam repellat velit nostrum totam dolores corrupti.</p>
           <span>Do you have an account?</span>
-          <button>Login</button>
+          <Link to='/login'><button>Login</button></Link>
         </div>
         <div className='right'>
             <h1>Register</h1>

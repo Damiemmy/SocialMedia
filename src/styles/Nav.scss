@@ -1,14 +1,66 @@
 .Nav{ 
-    background-color: black;
-    max-width: 700px;
-    justify-content:center ;
-    align-items: center;
-    margin: auto;
-    padding:50px;
     display:flex;
-    ul{ 
-        text-decoration: none;
-        display:flex;
+    flex-direction: row;
+    align-self: center;
+    height: 50px;
+    border:none;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+    padding: 3px 10px;
+    margin-bottom:15px;
+    position:sticky;
+    top:0;
+    background-color: white;
+   
+
+    .Navleft{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        padding: 10px;
         
     }
+    span{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color:blue;
+        
+        
+    }
+    .search{
+        display:flex;
+        align-items: center;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        gap:10px;
+        padding:10px;
+        input{
+            border:none;
+            width:500px;
+        }
+    }
+    
+    .Navright{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        padding: 10px;
+    }
+        .user{
+            display:flex;
+            align-items: center;
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius:50%;
+                object-fit: cover;
+                background-position: center;
+
+            }
+            span{
+                font-weight:500;
+            }
+        }
+           
 }
