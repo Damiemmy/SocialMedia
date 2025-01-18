@@ -1,9 +1,14 @@
+@import '../style.scss';
 .LeftBar{
+@include themify($themes){
     flex:2;
     position: sticky;
     top:70px;
     height:calc(100vh - 70px);
     overflow: scroll;
+    background-color: themed('bg');
+    color:themed('textcolor');
+    padding: 10px;
     
     &::-webkit-scrollbar{
         display:none;
@@ -13,11 +18,11 @@ hr{
     margin:10px 0px;
     border:none;
     height:0.5px;
-    background-color: lightgrey;
+    background-color: themed('border');
 }
        
     .Container{
-        padding: 15px;
+        
         
        
         .items{
@@ -57,5 +62,6 @@ hr{
                 }
             }
         }
+    }
     }
 }

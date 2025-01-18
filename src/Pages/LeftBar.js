@@ -14,17 +14,26 @@ import Tutorials from "../asset/12.png"
 import Courses from "../asset/13.png"
 import "../styles/LeftBar.scss"
 import Frien from "../asset/cta.jpg"
+import { useContext,useEffect } from 'react'
+import { Authcontext } from '../context/Authcontext'
+
 
 
 const LeftBar = () => {
+   
+    const retrieveCurrentUser=JSON.parse(localStorage.getItem('user'))
+
+   
   return (
     <div className='LeftBar'>
         <div className='Container'>
-            <div className='items'>
-                <div className='user'>
-                    <img src={Frien} alt='img'/>
-                    <span className='username'>don joe</span>
+           <div className='items'>
+            {retrieveCurrentUser.map(currentUse=>(
+                <div className='user' key={currentUse.id}>
+                    <img src={currentUse.profilepic} alt='img'/>
+                    <span className='username'>{currentUse.profilename}</span>
                 </div>
+                ))}
                 <div className='Menu'>
                     <img src={Friend} alt='img'/>
                     <span className='username'>Friend</span>
@@ -45,6 +54,7 @@ const LeftBar = () => {
                     <img src={Memories} alt='img'/>
                     <span className='username'>Memories</span>
                 </div>
+                
             </div>
             <hr/>
             <div className='items'>
@@ -94,6 +104,7 @@ const LeftBar = () => {
                     <span className='username'>Courses</span>
                 </div>
             </div>
+            
            
         </div>
     </div>

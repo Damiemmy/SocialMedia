@@ -1,0 +1,65 @@
+@import '../style.scss';
+.Newpost{
+@include themify($themes){
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    background-color: themed(bg);
+   .container{
+    diplay:flex;
+    color:themed(textcolorsoft);
+    flex-direction: column;
+    justify-content: center;
+    background-color: themed(bg);
+    -webkit-box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
+    -moz-box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
+    box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
+
+    .user{
+    display: flex;
+    justify-content: space-between;
+        .Userinfo{
+            display:flex;
+            align-items: center;
+            gap:20px;
+           
+            img{
+                width:50px;
+                height:50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+            }
+        }
+
+    }
+    .content{
+        p{
+            text-align: left;
+            font-weight: 500;
+        }
+        img{
+            width:600px;
+            height:400px;
+        }
+    }
+    .interactiontools{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        
+        .intericon{
+            display: flex;
+            gap:5px;
+        }
+
+    }
+   }
+}
+}

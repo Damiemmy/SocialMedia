@@ -8,10 +8,10 @@ const RightBar = () => {
       <div className='Container'>
         <div className='items'>
             <span>Suggestion For You</span>
-            <div className='user'>
+            <div className='user' style={{paddingBottom:15}}>
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
-                <p>Jan Doe</p>
+                <span>Jan Doe</span>
               </div>
               <div className='buttons'>
                 <button>Follow</button>
@@ -21,7 +21,7 @@ const RightBar = () => {
             <div className='user'>
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
-                <p>Jan Doe</p>
+                <span>Jan Doe</span>
               </div>
               <div className='buttons'>
                 <button>Follow</button>
@@ -30,12 +30,12 @@ const RightBar = () => {
             </div>
         </div>
         <div className='items'>
-          <span>Other</span>
+          <span>Latest Activities</span>
           <div className='user'>
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span> commented on a photo
+                  <span>Jan Doe</span> commented on a photo
                 </p>
               </div>
               <div className='buttons'>
@@ -46,7 +46,7 @@ const RightBar = () => {
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span> commented on a photo
+                  <span>Jan Doe</span> commented on a photo
                 </p>
               </div>
               <div className='buttons'>
@@ -57,7 +57,7 @@ const RightBar = () => {
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span> commented on a photo
+                  <span>Jan Doe</span> commented on a photo
                 </p>
               </div>
               <div className='buttons'>
@@ -68,7 +68,7 @@ const RightBar = () => {
               <div className='userinfo'>
                 <img src={Post} alt='no image'/>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span> commented on a photo
+                  <span>Jan Doe</span> commented on a photo
                 </p>
               </div>
               <div className='buttons'>
@@ -84,7 +84,7 @@ const RightBar = () => {
                 <img src={Post} alt='no image'/>
                 <div className='Online'></div>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span>
+                  <span>Jan Doe</span>
                 </p>     
               </div>
           </div>
@@ -93,7 +93,7 @@ const RightBar = () => {
                 <img src={Post} alt='no image'/>
                 <div className='Online'></div>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span>
+                  <span>Jan Doe</span>
                 </p>
                 
               </div>
@@ -103,7 +103,7 @@ const RightBar = () => {
                 <img src={Post} alt='no image'/>
                 <div className='Online'></div>
                 <p style={{fontSize:15, fontWeight:'unset'}}>
-                  <span style={{color:'black', fontWeight:'bold'}}>Jan Doe</span>
+                  <span>Jan Doe</span>
                 </p>
                 
               </div>

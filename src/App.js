@@ -8,11 +8,21 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import LeftBar from './Pages/LeftBar';
 import RightBar from './Pages/RightBar';
 import Profile from './Pages/Profile';
+import './style.scss';
+import { useContext } from 'react';
+import { Darkmodecontext } from './context/Darkmodecontext';
+import { Authcontext } from './context/Authcontext';
+
 
 function App() {
+
+  const {darkmode}=useContext(Darkmodecontext)
+  const currentUser=true;
+  console.log(currentUser);
+  
   const Layouts=()=>{
     return(
-      <div>
+      <div className={`theme-${(darkmode)?'dark':'light'}`}>
         <Nav/>
         <div style={{display:"flex"}}>
           <LeftBar/>
@@ -24,12 +34,14 @@ function App() {
         </div>
       </div>
     )
-  }
-  const currentUser=true;
+  };
+
   const ProtectedLayout=({children})=>{
     if(!currentUser){return<Navigate to="/login"/>}
     
-  return children}
+  return children
+}
+  
   
   const router=createBrowserRouter([
     

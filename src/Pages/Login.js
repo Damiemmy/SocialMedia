@@ -2,8 +2,16 @@ import React from 'react'
 import "../styles/Login.scss";
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Authcontext } from '../context/Authcontext';
+
 
 const Login = () => {
+const {login}=useContext(Authcontext);
+const handlelogin=()=>{
+    login();
+}
+ 
   return (
     <div className='login'>
       <div className='card'>
@@ -20,7 +28,9 @@ const Login = () => {
             <form>
               <input type='text' placeholder='Username'/>
               <input type='password' placeholder='Password'/>
-              <button>Login</button>
+              <Link to={'/'}>
+              <button onClick={handlelogin}>Login</button>
+              </Link>
             </form>
         </div>
       </div>
