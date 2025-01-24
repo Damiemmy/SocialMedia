@@ -4,14 +4,20 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     gap:20px;
     background-color: themed(bg);
+    padding: 20px;
+    border-radius: 2px;
    .container{
     diplay:flex;
-    color:themed(textcolorsoft);
+    color:black;
     flex-direction: column;
     justify-content: center;
-    background-color: themed(bg);
+    background-color: white;
+    
+    
+    border-radius: 4px;
     -webkit-box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
     -moz-box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
     box-shadow: -4px -6px 26px -14px rgba(0,0,0,0.54);
@@ -19,6 +25,7 @@
     .user{
     display: flex;
     justify-content: space-between;
+    
         .Userinfo{
             display:flex;
             align-items: center;
@@ -51,7 +58,7 @@
     .interactiontools{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         gap:20px;
         
         .intericon{

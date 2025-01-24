@@ -35,8 +35,8 @@ const Story = () => {
 
   return (
     <div className='Story'>
-       <div className="Stories" >
-              <img src={currentUser.profilepic} alt='no pic'/>
+       <div className="Stories" key={currentUser.id}>
+              <img src={currentUser.profileimage} alt='no pic'/>
               <span>{currentUser.profilename}</span>
               <button>+</button>
               

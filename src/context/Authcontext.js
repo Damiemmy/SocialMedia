@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import { useEffect,useState } from "react";
+import bolu from "../asset/homepic.jpg"
 
 
 
@@ -12,7 +13,8 @@ export const AuthcontextProvider=({children})=>{
     const login=()=>{
         setCurrentUser({
             "id":1,
-            "profilename":"don Joe"
+            "profilename":"don Joe",
+            "profileimage": bolu
            
 
         });

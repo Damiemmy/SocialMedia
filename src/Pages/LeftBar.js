@@ -21,19 +21,21 @@ import { Authcontext } from '../context/Authcontext'
 
 const LeftBar = () => {
    
-    const retrieveCurrentUser=JSON.parse(localStorage.getItem('user'))
+    const{login,currentUser}= useContext(Authcontext);
+
+        
+
 
    
   return (
     <div className='LeftBar'>
         <div className='Container'>
            <div className='items'>
-            {retrieveCurrentUser.map(currentUse=>(
-                <div className='user' key={currentUse.id}>
-                    <img src={currentUse.profilepic} alt='img'/>
-                    <span className='username'>{currentUse.profilename}</span>
+           
+                <div className='user' key={currentUser.id}>
+                    <img src={currentUser.profileimage} alt='img'/>
+                    <span className='username'>{currentUser.profilename}</span>
                 </div>
-                ))}
                 <div className='Menu'>
                     <img src={Friend} alt='img'/>
                     <span className='username'>Friend</span>
