@@ -15,7 +15,7 @@
     top:0;
     background-color: themed("bg");
     color:themed("textcolor");
-    
+    z-index: 999;
 
     .Navleft{
         display: flex;

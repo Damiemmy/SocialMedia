@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/New.scss';
 import {FaEllipsisH, FaThumbsUp,FaShare,FaComment} from 'react-icons/fa';
+import Usercomment from './comment.js';
 
 const Newpost = ({post}) => {
- 
+ const Liked=false;
+ const [commented,setCommented]=useState(false);
   return (
     <div className='Newpost'>
       <div className='container'>
@@ -26,13 +28,14 @@ const Newpost = ({post}) => {
         </div>
         <div className='interactiontools'>
            <div className='intericon'>150<FaThumbsUp/></div>
-           <div className='intericon'>12<FaComment/></div>
+           <div className='intericon' onClick={()=>setCommented(!commented)}>12<FaComment/></div>
            <div className='intericon'>5<FaShare/></div>
-
         </div>
-
+      <>
+          {commented && <Usercomment/>}
+          
+      </>
       </div>
-
     </div>
 
     
