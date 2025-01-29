@@ -27,9 +27,9 @@ const Newpost = ({post}) => {
             <img src={post.image} alt='no image'/>
         </div>
         <div className='interactiontools'>
-           <div className='intericon'>150<FaThumbsUp/></div>
-           <div className='intericon' onClick={()=>setCommented(!commented)}>12<FaComment/></div>
-           <div className='intericon'>5<FaShare/></div>
+           <div className='intericon'><FaThumbsUp/>150</div>
+           <div className='intericon' onClick={()=>setCommented(!commented)}><FaComment/>12</div>
+           <div className='intericon'><FaShare/>5</div>
         </div>
       <>
           {commented && <Usercomment/>}
