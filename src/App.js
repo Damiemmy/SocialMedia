@@ -73,9 +73,7 @@ function App() {
     },
     
   ],
-  {
-    basename:"/SocialMedia"
-  }
+ 
 );
   
   return (
