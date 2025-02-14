@@ -54,12 +54,17 @@
         img{
             width:600px;
             height:400px;
+            @include mobile{
+              width:300px;
+              height:250px;
+             }
         }
     }
     .interactiontools{
         display: flex;
         align-items: center;
         justify-content: left;
+        cursor:pointer;
         gap:20px;
         
         .intericon{

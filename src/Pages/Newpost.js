@@ -13,7 +13,7 @@ const Newpost = ({post}) => {
           <div className='Userinfo'>
             <img src={post.image} alt='no image'/>
             <div className='spanuserinfor'>
-            <span style={{fontWeight:'bold'}}> John Doe</span>
+            <span style={{fontWeight:'bold',cursor:'pointer'}}> John Doe</span>
             <span> 1 min ago</span>
             </div>
           </div>

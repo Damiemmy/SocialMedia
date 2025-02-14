@@ -39,9 +39,14 @@
         border-radius: 4px;
         gap:10px;
         padding:10px;
+        
         input{
             border:none;
             width:500px;
+            
+            @include mobile{
+                display:none;
+            }
         }
     }
     

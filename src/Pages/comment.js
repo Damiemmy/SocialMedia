@@ -28,8 +28,10 @@ const Usercomment = () => {
   return (
     <div className='comment'>
         <div style={{marginBottom:25}} className="postcomment">
+          <div style={{display:'flex',gap:20,fontWeigh:400,fontSize:15}}>
           <img src={currentUser.profileimage} alt='no image'/>
           <span style={{gap:0,fontWeight:500}}>{currentUser.profilename}</span>
+          </div>
           <input placeholder='write a comment' style={{width:'90%',height:'50px;',padding:8,border:'none;'}}/>
           <button style={{padding:8,color:'white',backgroundColor:'blue',cursor:'pointer',borderColor:'blue'}}>Send</button>
           

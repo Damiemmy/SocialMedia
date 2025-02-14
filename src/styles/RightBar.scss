@@ -9,6 +9,9 @@
     overflow: scroll;
     background-color:themed('bgsoft') ;
     color:themed('textcolorsoft');
+    @include mobile{
+        display:none;
+    }
     
     &::-webkit-scrollbar{
         display:none;

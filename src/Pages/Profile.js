@@ -8,6 +8,8 @@ import '../styles/Profile.scss';
 import profile from '../asset/profile.jpg'
 import profilecover from '../asset/profilecover.jpg'
 import { FaEllipsisV } from 'react-icons/fa';
+import Newpost from './Newpost';
+import Posts from './Posts';
 
 const Profile = () => {
   return (
@@ -27,19 +29,21 @@ const Profile = () => {
 
           </div>
           <div className="center">
+            <div className="username">
             <span>Elsa Eddie</span>
+            </div>
             <div className='centercontainer'>
-              <div className='left1'>
-                <div>
-                <FaSearchLocation/>
-                <span>USA</span>
+              <div className='info'>
+                <div className='items'>
+                  <FaSearchLocation/>
+                  <span>USA</span>
                 </div>
-                <div>
-                <FaLanguage/>
-                <span>SocialBook.com</span>
+                <div className='items'>
+                  <FaLanguage/>
+                  <span>SocialBook.com</span>
                 </div>
               </div>
-            <div className='right'>
+            <div className='button'>
               <button>follow</button>
             </div>
           </div>
@@ -50,8 +54,11 @@ const Profile = () => {
             <FaEllipsisV/>
 
           </div>
+         
         </div>  
+        
       </div>  
+      <Posts/>
     </div>
   )
 }

@@ -33,10 +33,10 @@ const New= JSON.parse(localStorage.getItem('Feed'))
         
         <Newpost
         post={posted} key={New.id}/>
+        
       
        
       ))}
-      <div>hi</div>
     </div>
   )
 }

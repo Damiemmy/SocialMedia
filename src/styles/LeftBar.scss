@@ -9,8 +9,12 @@
     background-color: themed('bg');
     color:themed('textcolor');
     padding: 10px;
+   
     
     &::-webkit-scrollbar{
+        display:none;
+    }
+    @include mobile{
         display:none;
     }
 
