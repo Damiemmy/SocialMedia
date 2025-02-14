@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/SocialMedia/static/css/main.e937ede2.css",
-    "main.js": "/SocialMedia/static/js/main.ec267d02.js",
+    "main.css": "/SocialMedia/static/css/main.8c88c37f.css",
+    "main.js": "/SocialMedia/static/js/main.0116b9f1.js",
     "static/media/blog-2.jpg": "/SocialMedia/static/media/blog-2.fac20169ee58c41a0dbf.jpg",
     "static/media/blog-recent-2.jpg": "/SocialMedia/static/media/blog-recent-2.ae5c78e53dd31117e223.jpg",
     "static/media/blog-recent-5.jpg": "/SocialMedia/static/media/blog-recent-5.d9c45891df80905de8ad.jpg",
+    "static/media/post.jpg": "/SocialMedia/static/media/post.39ccdc0537ef2dacc230.jpg",
+    "static/media/homepic.jpg": "/SocialMedia/static/media/homepic.a0afa6ddc441f3c51f37.jpg",
     "static/media/cta.jpg": "/SocialMedia/static/media/cta.e0205717e043c0d90a34.jpg",
+    "static/media/profilecover.jpg": "/SocialMedia/static/media/profilecover.fb2f2584ecb4a3699148.jpg",
+    "static/media/profile.jpg": "/SocialMedia/static/media/profile.b2008acdf74612d89b8f.jpg",
     "index.html": "/SocialMedia/index.html",
-    "main.e937ede2.css.map": "/SocialMedia/static/css/main.e937ede2.css.map",
-    "main.ec267d02.js.map": "/SocialMedia/static/js/main.ec267d02.js.map"
+    "main.8c88c37f.css.map": "/SocialMedia/static/css/main.8c88c37f.css.map",
+    "main.0116b9f1.js.map": "/SocialMedia/static/js/main.0116b9f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e937ede2.css",
-    "static/js/main.ec267d02.js"
+    "static/css/main.8c88c37f.css",
+    "static/js/main.0116b9f1.js"
   ]
 }
