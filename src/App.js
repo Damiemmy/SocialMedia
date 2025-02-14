@@ -72,7 +72,7 @@ function App() {
       element:<Login/>
     },
     
-  ],s
+  ],
   {
     basename:"/SocialMedia"
   }
